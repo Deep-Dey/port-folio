@@ -224,7 +224,6 @@ a{
     object-fit: cover;
 }
 #about .col-left .about-img {
-    display: none;
 	height: 100%;
 	width: 100%;
 	position: relative;
@@ -269,9 +268,6 @@ a{
 @media only screen and (min-width: 768px) {
     #about .about{
         flex-direction: row;
-    }
-    #about .col-left .about-img {
-        display: flex;
     }
 }
 
