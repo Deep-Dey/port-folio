@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-navbar.css">
     <title>PORTFOLIO</title>
 </head>
 <body>
+    <!-- Start of Nav-bar -->
+    <header class="header">
+        <div class="nav-logo">
+            <a href="index.html"><span>D</span>EEP <span>D</span>EY</a>
+        </div>
+        <div class="navigation">
+            <ul class="menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="html/projects.html">My Works</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hamburger" onclick=toggle()></div>
+    </header>
+    <!-- End of Nav-bar -->
+
     <!-- Start of Home Section -->
     <section id="home">
         <div class="home container">
@@ -17,43 +35,11 @@
                 <h1>Hello I am Deep,<br/>
                     I&nbsp;<span id="animate"></span></h1>
                 <h3>I make some beautiful things hope you would like</h3>
-                <a href="#" class="cta">My Works</a>
+                <a href="html/projects.html" class="cta">My Works</a>
             </div>
         </div>
     </section>
     <!-- End of Home Section -->
-
-    <!-- Start of Project Section -->
-    <section id="projects">
-        <div class="projects container">
-            <div class="projects-header">
-                <h1 class="section-title">MY <span>PROJECTS</span></h1>
-            </div>
-            <div class="all-projects">
-                <div class="project-item">
-                    <div class="project-info">
-                        <h2>SCANNER</h2>
-                        <p>An android app that scan your Aadhaar QR code and any QR & Bar Code and also extract text from images and save as PDF in your mobile.</p>
-                        <a href="#" class="github-link">Github Link</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/projects/p1.png" alt="image not found">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h2>COVID-19</h2>
-                        <p>An android app that shows you the analysis (Total Cases, Deaths, Recovery) of Corona virus for each state of India.</p>
-                        <a href="#" class="github-link">Github Link</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/projects/p2.png" alt="image not found">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Project Section -->
 
     <!-- Start of About Me Section -->
     <section id="about">
@@ -66,7 +52,7 @@
             <div class="col-right">
                 <h1 class="section-title">ABOUT <span>ME</span></h1>
                 <p>I am pursuing M.Sc.(Master in Science) in Computer Science from University of Kalyani. I have completed B.Sc. (Bachelor of Science) in Computer Science from Kanchrapara College under the University of Kalyani in the year 2019. I am a former employee at patelinfo .</p>
-                <a href="#">Download Resume</a>
+                <a href="https://drive.google.com/file/d/11gED2zzUifHDJW1tWvRll91FcZ0ujKRG/view?usp=sharing" target="_blank">Download Resume</a>
             </div>
     </section>
     <!-- End of About Me Section -->
@@ -98,6 +84,41 @@
         </div>
     </section>
     <!-- End of Contact Section -->
+
+    <!-- Start of Footer -->
+    <div id="footer">
+        <div class="footer container">
+            <div class="brand"><h1><Span>D</Span>EEP <span>D</span>EY</h1></div>
+        </div>
+        <div class="social-icon">
+            <div class="social-item">
+                <a href="https://www.facebook.com/profile.php?id=100044444490212" target="_blank">
+                    <img src="https://img.icons8.com/fluent/96/000000/facebook-new.png"/>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="https://twitter.com/DEEPDEY26092436" target="_blank">
+                    <img src="https://img.icons8.com/fluent/96/000000/twitter.png"/>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.instagram.com/deep20998/" target="_blank">
+                    <img src="https://img.icons8.com/fluent/96/000000/instagram-new.png"/>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.linkedin.com/in/deep-dey-13a527115/" target="_blank">
+                    <img src="https://img.icons8.com/fluent/96/000000/linkedin.png"/>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="#"><img src="https://img.icons8.com/color/96/000000/circled-chevron-up--v1.png"/></a>
+            </div>
+        </div>
+        <p>Copyright © 2020 Deep. All rights reserved</p>
+    </div>
+    <!-- End of Footer -->
     <script src="script/home.js"></script>
+    <script src="script/navbar.js"></script>
 </body>
 </html>

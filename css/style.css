@@ -19,6 +19,108 @@ a{
     align-items: center;
     justify-content: flex-start;
 }
+.brand h1{
+    font-size: 38px;
+    color: white;
+}
+.brand span{
+    color: crimson;
+}
+
+/* Start of Nav bar */
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    padding: 10px 30px;
+    transition: 0.3s;
+    z-index: 100;
+}
+.nav-logo a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+.nav-logo a span{
+    color: crimson;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    transition: 0.5s;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    width: 300px;
+    height: 100%;
+    padding-top: 65px;
+}
+.menu li{
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 1;
+    transition: 0.3s;
+    padding: 30px;
+    font-size: 25px;
+    transition: all 0.2s ease 0s;
+}
+.menu li a:hover{
+    transition: all 0.2s ease 0s;
+    padding: 20px 0px;
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: crimson;
+    color: white;
+}
+.hamburger{
+    position: relative;
+    width:30px;
+    height: 4px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hamburger::before,
+.hamburger::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: #FFFFFF;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.hamburger::before{
+    top:-10px;
+    width: 30px;
+}
+.hamburger::after{
+    top:10px;
+    width: 30px;
+}
+.hamburger{
+    display: block;
+}
+/* End of Nav-bar */
 
 /* Home Section */
 #home{
@@ -63,47 +165,14 @@ a{
     color: white;
     background-color: crimson;
 }
-
-@media all and (max-width: 560px){
-    #home .logo {
-        display: none;
-      }
-      #home #logo {
-        padding-right: 10px;
-        padding-left: 10px;
-      }
-}
 /* End of Home Section */
-
-/* Typing Effect */
-#animate {
-    position: relative;
-}
-#animate::after{
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 90%;
-    border-right: 5px solid crimson;
-    animation: blink 0.4s infinite ease;
-}
-
-@keyframes blink{
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-/* End of Typing effect */
 
 /* Start of My Project */
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 50px 0;
+	padding: 100px 0;
 }
 .section-title {
     font-size: 40px;
@@ -175,38 +244,13 @@ a{
     border: 2px solid white;
     transition: all ease 0.2s;
 }
-
 #projects .github-link:hover{
     color: white;
     background-color: crimson;
 }
+/* End of My project */
 
-@media only screen and (min-width: 768px) {
-    #projects .project-item {
-		flex-direction: row;
-	}
-	#projects .project-item:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	#projects .project-item {
-		height: 400px;
-		margin: 0;
-		width: 100%;
-		border-radius: 0;
-    }
-    #projects .project-img {
-        height: 100%;
-    }
-    #projects .project-img img {
-        display: flex;
-    }
-    #about .about{
-        flex-direction: row;
-    }
-
-}
-
-/* Starting About Us */
+/* Starting About ME */
 #about .about{
     flex-direction: column-reverse;
     text-align: center;
@@ -265,11 +309,7 @@ a{
     color: white;
     background-color: crimson;
 }
-@media only screen and (min-width: 768px) {
-    #about .about{
-        flex-direction: row;
-    }
-}
+/* End of About Me */
 
 /* Start Contact Section */
 #contact .contact {
@@ -279,7 +319,7 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 100px 0;
 }
 #contact .contact-items {
     display: flex;
@@ -315,7 +355,6 @@ a{
 	justify-content: center;
 	flex-direction: column;
 }
-
 #contact .contact-info h1 {
 	font-size: 2.5rem;
 	font-weight: 500;
@@ -331,8 +370,107 @@ a{
     width: 100%;
     object-fit: cover;
 }
+/* End of Contact Section */
+
+/* Start Footer */
+#footer{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+#footer .footer{
+    min-height: 100px;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-content: center;
+}
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+#footer .social-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#footer p{
+    text-align: center;
+    padding-bottom: 15px;
+    scroll-padding-right: -50px;
+}
+/* end Footer */
+
+/* Typing Effect */
+#animate {
+    position: relative;
+}
+#animate::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 90%;
+    border-right: 5px solid crimson;
+    animation: blink 0.4s infinite ease;
+}
+@keyframes blink{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* End of Typing effect */
+
+@media all and (max-width: 560px){
+    #home .logo {
+        display: none;
+      }
+      #home #logo {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+}
+
 @media only screen and (min-width: 768px) {
+    #projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#projects .project-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+    }
+    #projects .project-img {
+        height: 100%;
+    }
+    #projects .project-img img {
+        display: flex;
+    }
+    #about .about{
+        flex-direction: row;
+    }
+    #about .about{
+        flex-direction: row;
+    }
+    #about .col-right  p{
+        text-align: justify;
+        padding-left: 20px;
+    }
     #contact .contact {
         flex-direction: row;
+    }
+    #contact .section-title{
+        font-size: 90px;
     }
 }
