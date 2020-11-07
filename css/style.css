@@ -54,7 +54,6 @@ a{
     align-items: center;
 }
 .menu{
-    display: none;
     justify-content: center;
     flex-direction: column;
     align-items: center;

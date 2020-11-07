@@ -7,3 +7,7 @@ function toggle(){
     }
     
 };
+
+window.onload = function(){
+    document.querySelector('ul').style.display = "none";
+}
