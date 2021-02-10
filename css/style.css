@@ -172,6 +172,7 @@ a {
 }
 .card {
     margin: 10px;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 .card-body > p {
     font-size: 15px;
