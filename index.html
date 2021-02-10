@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/style-navbar.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-navbar.css"> -->
     <title>PORTFOLIO</title>
 </head>
+
 <body>
     <!-- Start of Nav-bar -->
-    <header class="header">
-        <div class="nav-logo">
-            <a href="index.html"><span>D</span>EEP <span>D</span>EY</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="font-size:20pt;">
+                <b><span>D</span>EEP <span>D</span>EY</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#particles-js">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#edu">EDUCATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#edu">EXPERIENCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/projects.html">ACCOMPLISHMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">ABOUT ME</a>
+                    </li>
+                </ul>
+                <span class="navbar-text text-danger">
+                    <a class="navbar-brand" href="https://github.com/Deep-Dey">
+                        <img src="https://img.icons8.com/color/48/000000/github.png" width="30" height="30"
+                            class="d-inline-block align-top" alt="">
+                    </a>
+                    <a class="navbar-brand" href="https://www.linkedin.com/in/deep-dey-20998/">
+                        <img src="https://img.icons8.com/color/48/000000/linkedin-circled--v1.png" height="30"
+                            class="d-inline-block align-top" alt="">
+                    </a>
+                </span>
+            </div>
         </div>
-        <div class="navigation">
-            <ul class="menu">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="html/projects.html">My Works</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="hamburger" onclick=toggle()></div>
-    </header>
+    </nav>
     <!-- End of Nav-bar -->
 
     <!-- Start of Home Section -->
-    <section id="home">
-        <div class="home container">
-            <div id="logo">
-                <img class="logo" src="img/logo.jpg" alt="no-image" width="150px" height="150px">
-            </div>
-            <div>
-                <h1>Hello I am Deep,<br/>
-                    I&nbsp;<span id="animate"></span></h1>
-                <h3>I make some beautiful things hope you would like</h3>
-                <a href="html/projects.html" class="cta">My Works</a>
-            </div>
+    <div id="particles-js" style="position: relative; width: 100%; height: 100vh;">
+        <div style="position: absolute; width: 100%; height: 100vh;">
+            <section id="home">
+                <div class="home container">
+                    <div id="logo">
+                        <img class="logo" src="img/logo.jpg" alt="no-image" width="160px" height="160px">
+                    </div>
+                    <div>
+                        <h1>Hello I am Deep,<br />
+                            I&nbsp;<span id="animate"></span></h1>
+                        <h3>I make some beautiful things hope you would like</h3>
+                    </div>
+                    <a href="html/projects.html" class="cta">My Works</a>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
+
+    <script src="script/particles.min.js"></script>
+    <script src="script/app.js"></script>
     <!-- End of Home Section -->
 
     <!-- Start of About Me Section -->
@@ -50,75 +88,75 @@
                 </div>
             </div>
             <div class="col-right">
-                <h1 class="section-title">ABOUT <span>ME</span></h1>
-                <p>I am pursuing M.Sc.(Master in Science) in Computer Science from University of Kalyani. I have completed B.Sc. (Bachelor of Science) in Computer Science from Kanchrapara College under the University of Kalyani in the year 2019. I am a former employee at patelinfo .</p>
-                <a href="https://drive.google.com/file/d/11gED2zzUifHDJW1tWvRll91FcZ0ujKRG/view?usp=sharing" target="_blank">Download Resume</a>
+                <h1 class="section-title">I am <span>Deep Dey</span></h1>
+                <p>I am pursuing M.Sc.(Master in Science) in Computer Science from University of Kalyani. I have
+                    completed B.Sc. (Bachelor of Science) in Computer Science from Kanchrapara College under the
+                    University of Kalyani in the year 2019. I am a former employee at patelinfo.</p>
+                <p><b>Email Id: deepdey20998@gmail.com</b></p>
+                <a href="https://drive.google.com/file/d/11gED2zzUifHDJW1tWvRll91FcZ0ujKRG/view?usp=sharing"
+                    target="_blank">Download Resume</a>
             </div>
     </section>
     <!-- End of About Me Section -->
 
-    <!-- Start of Contact Section -->
-    <section id="contact">
-        <div class="contact container">
-            <div>
-                <h1 class="section-title">CONTACT <span>ME</span></h1>
-            </div>
-            <div class="contact-items">
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/phone.png"/></div>
-                    <div class="contact-info">
-                        <h1>Phone</h1>
-                        <p>(+91) 8697448896</p>
-                        <p>(+91) 9875532989</p>
+    <!-- Start of Education Section -->
+    <section id="edu">
+        <div class="edu container">
+            <h1 class="section-title">EDUCA<span>TI</span>ON</h1>
+            <div class="card-list">
+                <div class="card bg-secondary text-white" style="width: 18rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">Post Graduate</h2>
+                        <p class="card-text">Institution:<br>University of Kalyani</p>
+                        <p class="card-text">Subject:<br>Computer Science</p>
+                        <p class="btn btn-primary">
+                            Marks: 89.6%
+                        </p>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png"/></div>
-                    <div class="contact-info">
-                        <h1>Email</h1>
-                        <p>deepdey20998@gmail.com</p>
-                        <p>deepdey9811@outlook.com</p>
+
+                <div class="card bg-secondary text-white" style="width: 18rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">Under Graduate</h2>
+                        <p class="card-text">Institution:<br>Kanchrapara College</p>
+                        <p class="card-text">Subject:<br>Computer Science</p>
+                        <p class="btn btn-primary">
+                            Marks: 77.5%
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-list">
+                <div class="card bg-secondary text-white" style="width: 18rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">H.S.(WBCHSE)</h2>
+                        <p class="card-text">Institution:<br>H.R.V.P.</p>
+                        <p class="card-text">Subject:<br>Science</p>
+                        <p class="btn btn-primary">
+                            Marks: 71%
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-secondary text-white" style="width: 18rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">Secondary</h2>
+                        <p class="card-text">Institution:<br>H.R.V.P.</p>
+                        <p class="card-text"><br><br></p>
+                        <p class="btn btn-primary">
+                            Marks: 87.5%
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End of Contact Section -->
+    <!-- End of Education Section -->
 
-    <!-- Start of Footer -->
-    <div id="footer">
-        <div class="footer container">
-            <div class="brand"><h1><Span>D</Span>EEP <span>D</span>EY</h1></div>
-        </div>
-        <div class="social-icon">
-            <div class="social-item">
-                <a href="https://www.facebook.com/profile.php?id=100044444490212" target="_blank">
-                    <img src="https://img.icons8.com/fluent/96/000000/facebook-new.png"/>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://twitter.com/DEEPDEY26092436" target="_blank">
-                    <img src="https://img.icons8.com/fluent/96/000000/twitter.png"/>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://www.instagram.com/deep20998/" target="_blank">
-                    <img src="https://img.icons8.com/fluent/96/000000/instagram-new.png"/>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://www.linkedin.com/in/deep-dey-13a527115/" target="_blank">
-                    <img src="https://img.icons8.com/fluent/96/000000/linkedin.png"/>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="#"><img src="https://img.icons8.com/color/96/000000/circled-chevron-up--v1.png"/></a>
-            </div>
-        </div>
-        <p>Copyright © 2020 Deep. All rights reserved</p>
-    </div>
-    <!-- End of Footer -->
     <script src="script/home.js"></script>
-    <script src="script/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
